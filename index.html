@@ -1,43 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <tittle><b><marquee>Welcome to Seamless Graphics</marquee></b></tittle>
 <style>
-    .photo{
+#mdiv{text-align:center;
+font-size:30px;
+width:1000;
+color:white;
+}
+
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 80px;
+  background-color: green;
+}
+
+#services {
+  top: 20px;
+  background-color: Orange;
+}
+
+#portfolio {
+  top: 200px;
+  background-color: #555;
+} 
+
+#contact {
+  top: 140px;
+  background-color: Teal;
+} 
+
+h2 {font-family:Cooper Black;
+
+color:orange;
+font-size:35px;
+}
+
+ .photo{
         background-image: url(IMG_E3068.JPG);
             background-size: cover;
             background-repeat: no-repeat;
             height: 100vh;
             font-family: Arial, sans-serif;
     }
-    header{background-color: brown;
+
+header{background-color: brown;
     color: blue;
     padding:20px;
     text-align: center;
-    }
-    section{padding:20px;
-    margin:20px;
-    }
-    footer{
-    color:rgb(0, 255, 115);
-    padding:20px;
-    bottom:0;
-    width: 10opx;
-    position: center;
-    } 
+
+
 </style>
 </head>
 <body>
-    <div class="photo">
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="services.html">services</a></li>
-            <li><a href="portfolio.html">portfolio</a></li>
-            <li><a href="contact.html">contact</a></li>
-        </ul>
-    </nav>    
+<div class="photo">
+<div id="mySidenav" class="sidenav">
+
+            <a href="index.html" id="Home">Home</a></li>
+            <li><a href="about.html" id="about">about</a></li>
+            <li><a href="services.html" id="services">services</a></li>
+            <li><a href="portfolio.html" id="portfolio">portfolio</a></li>
+            <li><a href="contact.html" id="contact">contact</a></li>
+ 
+  
+ </div>
+
 <header>
     <p>welcome to Seamless Graphics Design,<br>
         where creativity meets design excellence.
@@ -93,8 +134,11 @@
 </p>
 </section>
 <footer>
-    <b>&copy;2024 Seamless Graphics></b>
+    <b>&copy;2024 Seamless Graphics</b>
     </footer>
     </div>
+
+
+
 </body>
-</html> 
+</html>
